@@ -1,0 +1,13 @@
+utilities\GeneralUtility.class
+utilities\ScreenshotUtility.class
+pages\HomePage.class
+utilities\FakerUtility.class
+pages\ManageFooterText.class
+utilities\ExtentReportUtility.class
+utilities\ExcelUtility.class
+pages\ManageCategory.class
+pages\LogInPage.class
+pages\ManageContact.class
+utilities\FileUploadUtility.class
+utilities\WaitUtility.class
+pages\ManageNews.class

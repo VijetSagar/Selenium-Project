@@ -1,0 +1,25 @@
+<suite name="crossbrowsertesting">
+	<test name="chromeTest">
+		<parameter name="browser" value="chrome">
+		</parameter>
+
+
+		<classes>
+			<class name="testscript.ManageNewsTest">
+
+			</class>
+		</classes>
+	</test>
+	<test name="firefoxTest">
+		<parameter name="browser" value="firefox">
+		</parameter>
+
+
+		<classes>
+			<class name="testscript.ManageNewsTest">
+
+			</class>
+		</classes>
+	</test>
+
+</suite>

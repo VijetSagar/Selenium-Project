@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-23T21:10:36 PDT" name="Surefire suite" finished-at="2025-07-23T21:11:14 PDT" duration-ms="37456">
+    <groups>
+    </groups>
+    <test started-at="2025-07-23T21:10:36 PDT" name="Surefire test" finished-at="2025-07-23T21:11:14 PDT" duration-ms="37456">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:04 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:11:06 PDT" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:06 PDT" name="verifyNewsDeletion" finished-at="2025-07-23T21:11:08 PDT" duration-ms="1804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsDeletion -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:08 PDT" name="driverQuit" finished-at="2025-07-23T21:11:08 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsDeletion status=SUCCESS method=ManageNewsTest.verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@17046283] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:08 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:11:11 PDT" duration-ms="2349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:11 PDT" name="verifySuccessfulNewsCreation" finished-at="2025-07-23T21:11:14 PDT" duration-ms="2985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulNewsCreation -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@17046283]" started-at="2025-07-23T21:11:14 PDT" name="driverQuit" finished-at="2025-07-23T21:11:14 PDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulNewsCreation status=SUCCESS method=ManageNewsTest.verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@17046283] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.LogOutTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.LogOutTest@4b5a5ed1]" started-at="2025-07-23T21:10:36 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:10:40 PDT" duration-ms="3730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyLogOut()[pri:0, instance:testscript.LogOutTest@4b5a5ed1]" started-at="2025-07-23T21:10:40 PDT" name="verifyLogOut" finished-at="2025-07-23T21:10:43 PDT" duration-ms="3426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOut -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogOutTest@4b5a5ed1]" started-at="2025-07-23T21:10:43 PDT" name="driverQuit" finished-at="2025-07-23T21:10:43 PDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogOut status=SUCCESS method=LogOutTest.verifyLogOut()[pri:0, instance:testscript.LogOutTest@4b5a5ed1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.LogOutTest -->
+      <class name="testscript.ManageContactTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.ManageContactTest@2e4b8173]" started-at="2025-07-23T21:10:48 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:10:50 PDT" duration-ms="2358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifySuccessfulContactUpdating()[pri:0, instance:testscript.ManageContactTest@2e4b8173]" started-at="2025-07-23T21:10:50 PDT" name="verifySuccessfulContactUpdating" finished-at="2025-07-23T21:10:55 PDT" duration-ms="4876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulContactUpdating -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@2e4b8173]" started-at="2025-07-23T21:10:55 PDT" name="driverQuit" finished-at="2025-07-23T21:10:55 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulContactUpdating status=SUCCESS method=ManageContactTest.verifySuccessfulContactUpdating()[pri:0, instance:testscript.ManageContactTest@2e4b8173] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageContactTest -->
+      <class name="testscript.ManageFooterTextTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.ManageFooterTextTest@70e8f8e]" started-at="2025-07-23T21:10:55 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:11:00 PDT" duration-ms="4887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyFooterTextUpdating()[pri:0, instance:testscript.ManageFooterTextTest@70e8f8e]" started-at="2025-07-23T21:11:00 PDT" name="verifyFooterTextUpdating" finished-at="2025-07-23T21:11:04 PDT" duration-ms="3878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterTextUpdating -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTextTest@70e8f8e]" started-at="2025-07-23T21:11:04 PDT" name="driverQuit" finished-at="2025-07-23T21:11:04 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFooterTextUpdating status=SUCCESS method=ManageFooterTextTest.verifyFooterTextUpdating()[pri:0, instance:testscript.ManageFooterTextTest@70e8f8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageFooterTextTest -->
+      <class name="testscript.ManageCategoryTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.ManageCategoryTest@72a7c7e0]" started-at="2025-07-23T21:10:43 PDT" name="initialiseBrowser" finished-at="2025-07-23T21:10:45 PDT" duration-ms="2140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyCategorySearching()[pri:0, instance:testscript.ManageCategoryTest@72a7c7e0]" started-at="2025-07-23T21:10:45 PDT" name="verifyCategorySearching" finished-at="2025-07-23T21:10:48 PDT" duration-ms="2253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategorySearching -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageCategoryTest@72a7c7e0]" started-at="2025-07-23T21:10:48 PDT" name="driverQuit" finished-at="2025-07-23T21:10:48 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCategorySearching status=SUCCESS method=ManageCategoryTest.verifyCategorySearching()[pri:0, instance:testscript.ManageCategoryTest@72a7c7e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageCategoryTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

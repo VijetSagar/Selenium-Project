@@ -1,0 +1,16 @@
+<suite name = "mysuite">
+<test name= "mytest">
+<listeners>
+<listener class-name="listeners.Listeners"></listener>
+
+<listener class-name="listeners.RetryListener"></listener>
+</listeners>
+
+<classes>
+<class name = "testscript.ManageNewsTest">
+
+</class>
+</classes>
+</test>
+
+</suite>

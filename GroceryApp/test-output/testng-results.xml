@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-27T03:53:02 PDT" name="crossbrowsertesting" finished-at="2025-07-27T03:54:12 PDT" duration-ms="69212">
+    <groups>
+      <group name="selected">
+        <method signature="ManageNewsTest.verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@765d7657]" name="verifyNewsDeletion" class="testscript.ManageNewsTest"/>
+        <method signature="ManageNewsTest.verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@765d7657]" name="verifyNewsUpdating" class="testscript.ManageNewsTest"/>
+        <method signature="ManageNewsTest.verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" name="verifyNewsDeletion" class="testscript.ManageNewsTest"/>
+        <method signature="ManageNewsTest.verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" name="verifyNewsUpdating" class="testscript.ManageNewsTest"/>
+      </group> <!-- selected -->
+    </groups>
+    <test started-at="2025-07-27T03:53:02 PDT" name="chromeTest" finished-at="2025-07-27T03:53:29 PDT" duration-ms="26370">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:02 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:08 PDT" duration-ms="5626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:08 PDT" name="verifyNewsDeletion" finished-at="2025-07-27T03:53:12 PDT" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsDeletion -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:12 PDT" name="driverQuit" finished-at="2025-07-27T03:53:12 PDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsDeletion status=SUCCESS method=ManageNewsTest.verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@765d7657] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:12 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:14 PDT" duration-ms="2086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:14 PDT" name="verifyNewsUpdating" finished-at="2025-07-27T03:53:16 PDT" duration-ms="2273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsUpdating -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:16 PDT" name="driverQuit" finished-at="2025-07-27T03:53:16 PDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsUpdating status=SUCCESS method=ManageNewsTest.verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@765d7657] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:16 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:19 PDT" duration-ms="2657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:19 PDT" name="verifySuccessfulNewsCreation" finished-at="2025-07-27T03:53:22 PDT" duration-ms="3733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulNewsCreation -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:22 PDT" name="driverQuit" finished-at="2025-07-27T03:53:22 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulNewsCreation status=SUCCESS method=ManageNewsTest.verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@765d7657] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:22 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:25 PDT" duration-ms="2440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifysampleNEWSsearching()[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:25 PDT" name="verifysampleNEWSsearching" finished-at="2025-07-27T03:53:29 PDT" duration-ms="3967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysampleNEWSsearching -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@765d7657]" started-at="2025-07-27T03:53:29 PDT" name="driverQuit" finished-at="2025-07-27T03:53:29 PDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifysampleNEWSsearching status=SUCCESS method=ManageNewsTest.verifysampleNEWSsearching()[pri:0, instance:testscript.ManageNewsTest@765d7657] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
+    </test> <!-- chromeTest -->
+    <test started-at="2025-07-27T03:53:29 PDT" name="firefoxTest" finished-at="2025-07-27T03:54:12 PDT" duration-ms="42797">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:29 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:39 PDT" duration-ms="10605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:39 PDT" name="verifyNewsDeletion" finished-at="2025-07-27T03:53:43 PDT" duration-ms="3438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsDeletion -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:43 PDT" name="driverQuit" finished-at="2025-07-27T03:53:43 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsDeletion status=SUCCESS method=ManageNewsTest.verifyNewsDeletion()[pri:0, instance:testscript.ManageNewsTest@5e5d171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:43 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:50 PDT" duration-ms="7136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:50 PDT" name="verifyNewsUpdating" finished-at="2025-07-27T03:53:52 PDT" duration-ms="2467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsUpdating -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:52 PDT" name="driverQuit" finished-at="2025-07-27T03:53:52 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsUpdating status=SUCCESS method=ManageNewsTest.verifyNewsUpdating()[pri:0, instance:testscript.ManageNewsTest@5e5d171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:52 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:53:59 PDT" duration-ms="6609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:53:59 PDT" name="verifySuccessfulNewsCreation" finished-at="2025-07-27T03:54:02 PDT" duration-ms="2920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulNewsCreation -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:54:02 PDT" name="driverQuit" finished-at="2025-07-27T03:54:02 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulNewsCreation status=SUCCESS method=ManageNewsTest.verifySuccessfulNewsCreation()[pri:0, instance:testscript.ManageNewsTest@5e5d171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:54:02 PDT" name="initialiseBrowser" finished-at="2025-07-27T03:54:10 PDT" duration-ms="7639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifysampleNEWSsearching()[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:54:10 PDT" name="verifysampleNEWSsearching" finished-at="2025-07-27T03:54:12 PDT" duration-ms="1952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysampleNEWSsearching -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5e5d171f]" started-at="2025-07-27T03:54:12 PDT" name="driverQuit" finished-at="2025-07-27T03:54:12 PDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifysampleNEWSsearching status=SUCCESS method=ManageNewsTest.verifysampleNEWSsearching()[pri:0, instance:testscript.ManageNewsTest@5e5d171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
+    </test> <!-- firefoxTest -->
+  </suite> <!-- crossbrowsertesting -->
+</testng-results>
