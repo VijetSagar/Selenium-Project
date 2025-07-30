@@ -27,21 +27,27 @@ public class ManageCategory {
 
 	@FindBy(xpath = "//td[text()='Matt']")
 	WebElement categoryTitle;
+	
+	@FindBy(xpath = "//center[text()='.........RESULT NOT FOUND.......']")
+	WebElement noResultText;
 
-	public void clickCategorySearchButton() {
+	public ManageCategory clickCategorySearchButton() {
 		categorySearchButton.click();
+		return this;
 	}
 
-	public void enterCategory() {
+	public ManageCategory enterCategory(String category) {
 		categoryField.clear();
-		categoryField.sendKeys("Matt");
+		categoryField.sendKeys(category);
+		return this;
 	}
 
-	public void clickSearch2Button() {
+	public ManageCategory clickSearch2Button() {
 		search2Button.click();
+		return this;
 	}
 
-	public void isParticularCategoryDisplayed() {
+	public ManageCategory isParticularCategoryDisplayed() {
 		try {
 			if (categoryTitle.isDisplayed()) {
 				System.out.println("We find sample category");
@@ -49,6 +55,12 @@ public class ManageCategory {
 		} catch (Exception e) {
 			System.out.println("The Result not found");
 		}
+		return this;
+	}
+	
+	public boolean isSampleCategoryDisplayed() {
+		return noResultText.isDisplayed();
 	}
 
+	
 }

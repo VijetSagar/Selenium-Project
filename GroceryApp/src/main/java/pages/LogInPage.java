@@ -37,16 +37,19 @@ public class LogInPage {
 	@FindBy(xpath = "//p[text()='Sign in to start your session']")
 	WebElement signInElement;
 
-	public void enterUsername(String userName) {
+	public LogInPage enterUsername(String userName) {
 		userNameField.sendKeys(userName);
+		return this;
 	}
 
-	public void enterPassword(String password) {
+	public LogInPage enterPassword(String password) {
 		passwordField.sendKeys(password);
+		return this;
 	}
 
-	public void clickSignIn() {
+	public HomePage clickSignIn() {
 		SignInButton.click();
+		return new HomePage(driver);
 	}
 
 	public boolean isHomepageLoaded() {
@@ -57,13 +60,14 @@ public class LogInPage {
 		return alertMessageOfInvalid.isDisplayed();
 	}
 
-	public void logInUsingExcel() throws IOException {
+	public HomePage logInUsingExcel() throws IOException {
 		String username = ExcelUtility.readStringData(4, 0, "LogInSheet");
 
 		String password = ExcelUtility.readStringData(4, 1, "LogInSheet");
 		userNameField.sendKeys(username);
 		passwordField.sendKeys(password);
 		SignInButton.click();
+		return new HomePage(driver);
 	}
 
 	public boolean isSignInElementDisplayed() {

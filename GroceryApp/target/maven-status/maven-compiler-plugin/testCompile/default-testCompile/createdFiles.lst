@@ -1,8 +1,8 @@
 testscript\LogOutTest.class
 testscript\ManageCategoryTest.class
 testscript\LogInTestOfSupermarket.class
-testscript\BaseClassOfSupermarket.class
-testscript\ManageNewsTest.class
+testscript\AdminUsersTest.class
+automationCore\BaseClassOfSupermarket.class
 listeners\Listeners.class
 testscript\ManageContactTest.class
 testscript\ManageFooterTextTest.class

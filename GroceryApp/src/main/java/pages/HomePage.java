@@ -36,32 +36,39 @@ public class HomePage {
 	@FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
 	private WebElement logOutButton;
 
-	public void clickAdminUsersTab() {
+	public AdminUsers clickAdminUsersTab() {
 		adminUsersTab.click();
+		return new AdminUsers(driver);
 	}
 
-	public void clickManageNews() {
+	public ManageNews clickManageNews() {
 		manageNewsTab.click();
+		return new ManageNews(driver);
 	}
 
-	public void clickManageFooterText() {
+	public ManageFooterText clickManageFooterText() {
 		manageFooterTextTab.click();
+		return new ManageFooterText(driver);
 	}
 
-	public void clickManageContact() {
+	public ManageContact clickManageContact() {
 		manageContactTab.click();
+		return new ManageContact(driver);
 	}
 
-	public void clickManageCategory() {
+	public ManageCategory clickManageCategory() {
 		manageCategoryTab.click();
+		return new ManageCategory(driver);
 	}
 
 	public void clickUserAdmin() {
 		userAdmin.click();
+	
 	}
 
-	public void clickLogout() {
+	public LogInPage clickLogout() {
 		logOutButton.click();
+		return new LogInPage(driver);
 	}
 
 }

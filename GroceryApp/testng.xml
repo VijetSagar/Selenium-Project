@@ -1,16 +1,20 @@
-<suite name = "mysuite">
-<test name= "mytest">
-<listeners>
-<listener class-name="listeners.Listeners"></listener>
+<suite name="mysuite">
+	<test name="mytest">
+		<parameter name="browser" value="chrome">
+		</parameter>
 
-<listener class-name="listeners.RetryListener"></listener>
-</listeners>
+		<listeners>
+			<listener class-name="listeners.Listeners"></listener>
 
-<classes>
-<class name = "testscript.ManageNewsTest">
+			<listener class-name="listeners.RetryListener"></listener>
+		</listeners>
 
-</class>
-</classes>
-</test>
+		<classes>
+			<class name="testscript.AdminUsersTest">
+
+
+			</class>
+		</classes>
+	</test>
 
 </suite>

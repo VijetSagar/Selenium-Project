@@ -38,30 +38,35 @@ public class ManageFooterText {
 	@FindBy(xpath = "//button[@name='Update']")
 	WebElement updateFooter;
 
-	public void clickActionFooter() {
+	public ManageFooterText clickActionFooter() {
 		actionButtonFooter.click();
+		return this;
 	}
 
-	public void enterPhoneNo() {
+	public ManageFooterText enterPhoneNo() {
 		phoneFooter.clear();
 		String phoneNo = fake.generatePhoneNumber();
 		phoneFooter.sendKeys(phoneNo);
+		return this;
 	}
 
-	public void enterEmail() {
+	public ManageFooterText enterEmail() {
 		emailFooter.clear();
 		String gmail = fake.generateGmail();
 		emailFooter.sendKeys(gmail);
+		return this;
 	}
 
-	public void enterAddress() {
+	public ManageFooterText enterAddress() {
 		addressFooter.clear();
 		String address = fake.generateAddress();
 		addressFooter.sendKeys(address);
+		return this;
 	}
 
-	public void clickFooterUpdate() {
+	public ManageFooterText clickFooterUpdate() {
 		updateFooter.click();
+		return this;
 	}
 
 	public boolean isFooterUpdatingAlertDisplayed() {

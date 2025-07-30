@@ -1,9 +1,11 @@
 <suite name="mysuite">
 	<test name="mytest">
+		<parameter name="browser" value="chrome">
+		</parameter>
 
 		<groups>
 			<run>
-				<exclude name="selected">
+				<exclude name="smoke">
 
 				</exclude>
 

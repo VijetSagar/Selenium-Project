@@ -62,31 +62,37 @@ public class ManageNews {
 	@FindBy(xpath = "//td[text()='business world']")
 	WebElement newsSample;
 
-	public void clickNewButton() {
+	public ManageNews clickNewButton() {
 		newButton.click();
+		return this;
 	}
 
-	public void enterNewNews() {
+	public ManageNews enterNewNews(String news) {
 		EnterNewsField.clear();
-		EnterNewsField.sendKeys("Kakkanada is in Orange alert");
+		EnterNewsField.sendKeys(news);
+		return this;
 	}
 
-	public void clickSaveButton() {
+	public ManageNews clickSaveButton() {
 		saveButton.click();
+		return this;
 	}
 
 	public boolean isNewNewsAlertDisplayed() {
 		return newsCreationAlert.isDisplayed();
+		
 	}
 
-	public void clickDeleteButton() {
+	public ManageNews clickDeleteButton() {
 		deleteButton.click();
+		return this;
 	}
 
-	public void newsDeletion() {
+	public ManageNews newsDeletion() {
 		String alertMessage = driver.switchTo().alert().getText();
 		System.out.println(alertMessage);
 		driver.switchTo().alert().accept();
+		return this;
 	}
 
 	public boolean isNEWSDeletionAlertDisplayed() {
@@ -95,32 +101,37 @@ public class ManageNews {
 		return newsDeletionAlert.isDisplayed();
 	}
 
-	public void clickUpdateAction() {
+	public ManageNews clickUpdateAction() {
 		updateAction.click();
+		return this;
 	}
 
-	public void clickUpdateButton() {
+	public ManageNews clickUpdateButton() {
 		updateButton.click();
+		return this;
 	}
 
 	public boolean isNEWSUpdatingAlertDisplayed() {
 		return newsUpdationAlert.isDisplayed();
 	}
 
-	public void clickSearch1() {
+	public ManageNews clickSearch1() {
 		searchButton.click();
+		return this;
 	}
 
-	public void searchNEWS() {
+	public ManageNews searchNEWS(String sample) {
 		titleField.click();
-		titleField.sendKeys("business World");
+		titleField.sendKeys(sample);
+		return this;
 	}
 
-	public void clickSearch2() {
+	public ManageNews clickSearch2() {
 		search2.click();
+		return this;
 	}
 
-	public void findSample() {
+	public ManageNews findSample() {
 		try {
 			if (newsSample.isDisplayed()) {
 				System.out.println("We find sample");
@@ -128,6 +139,12 @@ public class ManageNews {
 		} catch (Exception e) {
 			System.out.println("We could not find sample NEWS");
 		}
+		return this;
+	}
+	
+	
+	public boolean isNEWSSampleDisplayed() {
+		return newsSample.isDisplayed();
 	}
 
 }

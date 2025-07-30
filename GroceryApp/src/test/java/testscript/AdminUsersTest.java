@@ -6,22 +6,26 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.BaseClassOfSupermarket;
+import constants.ConstantsClass;
 import pages.AdminUsers;
 import pages.HomePage;
 import pages.LogInPage;
 
+
 public class AdminUsersTest extends BaseClassOfSupermarket {
+	LogInPage login;
+	HomePage home;
+	AdminUsers user;
+	
 	@Test
 	public void verifyStatusChanging() throws IOException {
 
-		LogInPage admin = new LogInPage(driver);
-		admin.logInUsingExcel();
-		HomePage home = new HomePage(driver);
-		home.clickManageContact();
-		AdminUsers user = new AdminUsers(driver);
-		user.clickActiveStatus();
+		 login = new LogInPage(driver);
+		home=login.logInUsingExcel();
+		user=home.clickAdminUsersTab().clickActiveStatus();
+
 
 		boolean statusChanging = user.isStatusChangingAlertDisplayed();
-		Assert.assertTrue(statusChanging, "No changes in status");
+		Assert.assertTrue(statusChanging, ConstantsClass.au_verifyStatusChanging);
 	}
 }

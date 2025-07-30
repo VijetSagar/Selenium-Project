@@ -45,42 +45,49 @@ public class ManageContact {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement contactUpdationAlert;
 
-	public void clickAction() {
+	public ManageContact clickAction() {
 		actionButton.click();
+		return this;
 	}
 
-	public void enterPhoneNo() {
+	public ManageContact enterPhoneNo() {
 		phoneField.clear();
 		String phoneNo = fake.generatePhoneNumber();
 		phoneField.sendKeys(phoneNo);
+		return this;
 	}
 
-	public void enterEmail() {
+	public ManageContact enterEmail() {
 		emailField.clear();
 		String gmail = fake.generateGmail();
 		emailField.sendKeys(gmail);
+		return this;
 	}
 
-	public void enterAddress() {
+	public ManageContact enterAddress() {
 		addressField.clear();
 		String address = fake.generateAddress();
 		addressField.sendKeys(address);
+		return this;
 	}
 
-	public void enterDeliveryTime() {
+	public ManageContact enterDeliveryTime() {
 		deliveryTimeField.clear();
 		String deliveryTime = general.generateCurrentDateAndTime();
 		deliveryTimeField.sendKeys(deliveryTime);
+		return this;
 	}
 
-	public void enterDeliverCharge() {
+	public ManageContact enterDeliverCharge() {
 		deliveryChargeField.clear();
 		String deliveryCharge = fake.generateNumber();
 		deliveryChargeField.sendKeys(deliveryCharge);
+		return this;
 	}
 
-	public void clickUpdate() {
+	public ManageContact clickUpdate() {
 		general.clickElementByJSE(updateButton, driver);
+		return this;
 	}
 
 	public boolean isContactUpdatingAlertDisplayed() {

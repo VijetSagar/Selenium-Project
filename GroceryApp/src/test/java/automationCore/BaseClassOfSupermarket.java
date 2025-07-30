@@ -27,7 +27,7 @@ public class BaseClassOfSupermarket {
 
 	public WebDriver driver;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	public void initialiseBrowser(String browser) throws Exception {
 		prop = new Properties();
@@ -51,12 +51,13 @@ public class BaseClassOfSupermarket {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void driverQuit(ITestResult itestresult) throws IOException {
 		if (itestresult.getStatus() == ITestResult.FAILURE) {
 			ScreenshotUtility screenshot = new ScreenshotUtility();
 			screenshot.getScreenshot(driver, itestresult.getName());
 		}
+		//driver.quit();
 
 	}
 }

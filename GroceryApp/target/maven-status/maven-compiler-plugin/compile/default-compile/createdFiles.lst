@@ -1,5 +1,6 @@
 utilities\GeneralUtility.class
 utilities\ScreenshotUtility.class
+constants\ConstantsClass.class
 pages\HomePage.class
 utilities\FakerUtility.class
 pages\ManageFooterText.class
@@ -11,3 +12,4 @@ pages\ManageContact.class
 utilities\FileUploadUtility.class
 utilities\WaitUtility.class
 pages\ManageNews.class
+pages\AdminUsers.class

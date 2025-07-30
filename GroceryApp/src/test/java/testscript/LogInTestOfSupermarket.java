@@ -8,69 +8,66 @@ import org.testng.annotations.Test;
 
 import automationCore.BaseClassOfSupermarket;
 import constants.ConstantsClass;
+import pages.HomePage;
 import pages.LogInPage;
 
 public class LogInTestOfSupermarket extends BaseClassOfSupermarket {
+	
+	LogInPage login;
+	HomePage home;
+	
 	@Test
 	public void verifyValidLogIn() throws IOException {
 
-		LogInPage logIn = new LogInPage(driver);
-		// logIn.enterUsername("admin");
-		// logIn.enterPassword("admin");
-		// logIn.clickSignIn();
-		logIn.logInUsingExcel();
+		login = new LogInPage(driver);
+		home=login.logInUsingExcel();
 
-		boolean isHomepageLoaded = logIn.isHomepageLoaded();
+		boolean isHomepageLoaded =login.isHomepageLoaded();
 		Assert.assertTrue(isHomepageLoaded, ConstantsClass.lp_verifyValidLogIn);
 	}
 
 	@Test
 	public void verifyValidUsernameInvalidPassword() {
-		LogInPage logIn = new LogInPage(driver);
-		logIn.enterUsername("admin");
-		logIn.enterPassword("Tiger@321");
-		logIn.clickSignIn();
+		login = new LogInPage(driver);
+		home=login.enterUsername("admin").enterPassword("Tiger@321").clickSignIn();
+		
 
-		boolean isAlertMessageDisplayed = logIn.isAlertDisplayed();
-		Assert.assertTrue(isAlertMessageDisplayed, "Alert has not displayed");
+		boolean isAlertMessageDisplayed = login.isAlertDisplayed();
+		Assert.assertTrue(isAlertMessageDisplayed, ConstantsClass.lp_verifyValidUsernameInvalidPassword);
 	}
 
 	@Test
 	public void verifyInvalidUsernameValidPassword() {
-		LogInPage logIn = new LogInPage(driver);
-		logIn.enterUsername("Scott");
-		logIn.enterPassword("admin");
-		logIn.clickSignIn();
+		login = new LogInPage(driver);
+		home=login.enterUsername("scott").enterPassword("admin").clickSignIn();
 
-		boolean isAlertMessageDisplayed = logIn.isAlertDisplayed();
-		Assert.assertTrue(isAlertMessageDisplayed, "Alert has not displayed");
+		boolean isAlertMessageDisplayed = login.isAlertDisplayed();
+		Assert.assertTrue(isAlertMessageDisplayed, ConstantsClass.lp_verifyInvalidUsernameValidPassword);
 	}
 
 	@Test
 	public void verifyInvalidCredentials() {
-		LogInPage logIn = new LogInPage(driver);
-		logIn.enterUsername("Scott");
-		logIn.enterPassword("Tiger@321");
-		logIn.clickSignIn();
+		login = new LogInPage(driver);
+		home=login.enterUsername("scott").enterPassword("admin@1").clickSignIn();
 
-		boolean isAlertMessageDisplayed = logIn.isAlertDisplayed();
-		Assert.assertTrue(isAlertMessageDisplayed, "Alert has not displayed");
+
+		boolean isAlertMessageDisplayed = login.isAlertDisplayed();
+		Assert.assertTrue(isAlertMessageDisplayed, ConstantsClass.lp_verifyInvalidCredentials);
 	}
 
 	@Test(dataProvider = "logInDataProvider")
 	public void verifyLogInWithSetOfCredentials(String userName, String password) {
-		LogInPage logIn = new LogInPage(driver);
-		logIn.enterUsername(userName);
-		logIn.enterPassword(password);
-		logIn.clickSignIn();
+		login = new LogInPage(driver);
+		home=login.enterUsername(userName).enterPassword(password).clickSignIn();
 
-		boolean isAlertMessageDisplayed = logIn.isAlertDisplayed();
-		Assert.assertTrue(isAlertMessageDisplayed, "Alert has not displayed");
+
+		boolean isAlertMessageDisplayed = login.isAlertDisplayed();
+		Assert.assertTrue(isAlertMessageDisplayed, ConstantsClass.lp_verifyLogInWithSetOfCredentials);
 	}
 
 	@DataProvider(name = "logInDataProvider")
 	public Object[][] dpMethod() {
-		return new Object[][] { { "admin", "admin" }, { "xyz", "obsqura" }, { "asc", "asdaf" }, { "gagaf", "gssf" } };
+		return new Object[][] { { "admin", "admins" }, { "xyz", "obsqura" }, { "asc", "asdaf" }, { "gagaf", "gssf" } };
 	}
 
 }

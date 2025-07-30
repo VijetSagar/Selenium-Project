@@ -6,27 +6,32 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.BaseClassOfSupermarket;
+import constants.ConstantsClass;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.ManageFooterText;
 
 public class ManageFooterTextTest extends BaseClassOfSupermarket {
+	
+	LogInPage login;
+	HomePage home;
+	ManageFooterText manage;
+	
+	
+	
+	
+	
 	@Test
 	public void verifyFooterTextUpdating() throws IOException {
 
-		LogInPage foot = new LogInPage(driver);
-		foot.logInUsingExcel();
-		HomePage home = new HomePage(driver);
-		home.clickManageFooterText();
-		ManageFooterText manage = new ManageFooterText(driver);
-		manage.clickActionFooter();
-		manage.enterAddress();
-		manage.enterEmail();
-		manage.enterPhoneNo();
-		manage.clickFooterUpdate();
+		login= new LogInPage(driver);
+		home=login.logInUsingExcel();
+		manage=home.clickManageFooterText().clickActionFooter().enterAddress()
+		.enterEmail().enterPhoneNo().clickFooterUpdate();
+
 
 		boolean isFooterTextUpdated = manage.isFooterUpdatingAlertDisplayed();
-		Assert.assertTrue(isFooterTextUpdated, "No Footer text updated");
+		Assert.assertTrue(isFooterTextUpdated, ConstantsClass.mf_verifyFooterTextUpdating);
 
 	}
 }
